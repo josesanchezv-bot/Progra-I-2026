@@ -14,21 +14,21 @@ int main()
     cin >> num1;
     cout << "ingresar segundo numero" << endl;
     cin >> num2;
-    if (num1>num2)
+    if (num1>num2) //condición A
     {
-        for (size_t i = 0; i < num1; i++)
+        for (size_t i = 0; i < num1; i++) //cadena ascendente
         {
             cout<< i;
         } 
     }
-    if (num1<num2)
+    if (num1<num2) //condición B
     {
-        for (size_t i = num2; i >= 1; i--)
+        for (size_t i = num2; i >= 1; i--) //cadena descendente 
         {
             cout << i;
         }   
     }
-    if (num1==num2)
+    if (num1==num2)//condicion C
     {
         cout << "ambos numeros iguales, sin forma de proceder";
     }

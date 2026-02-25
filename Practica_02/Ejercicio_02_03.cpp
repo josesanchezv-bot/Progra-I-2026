@@ -16,7 +16,7 @@ int main()
     cout << "sumatoria hasta: "<<n;
     for (size_t i = 0; i <= n; i++)
     {
-        suma += i;
+        suma += i; //genera la suma hasta el numero indicado
     }
     cout << "la sumatoria total hasta n es: "<< endl << suma;
     return 0;

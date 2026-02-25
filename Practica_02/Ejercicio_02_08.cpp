@@ -16,9 +16,10 @@ int main()
     cout << "Ingrese la cantidad de productos vendidos: ";
     cin >> n;
 
-    for (int i = 1; i <= n; i++) {
+    for (int i = 1; i <= n; i++) 
+    {
         cout << "Precio del producto " << i << ": ";
-        cin >> precio;
+        cin >> precio; //ingresar precio o precios
         subtotal += precio;
     }
 
@@ -29,7 +30,8 @@ int main()
     total = subtotal + iva;
 
     // Aplicar descuento si pasa de 2500 Bs
-    if (total > 2500) {
+    if (total > 2500) 
+    {
         descuento = total * 0.05;
     }
 

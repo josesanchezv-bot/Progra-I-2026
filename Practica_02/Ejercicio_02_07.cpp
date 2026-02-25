@@ -12,18 +12,20 @@ int main()
     int num,divisores = 0;
     cout << "ingresar un numero para ver si es perfecto: ";
     cin >> num;
-    for (size_t i = 0; i <= num; i++)
+    for (int i = 1; i < num; i++)
     {
-       if (num%i==0)
+       if (num % i==0) //busqueda de divisores por medio del for
        {
-        divisores+=num;
+        divisores+=i; //la suma de sus divisores exactos
        }
     }
+    cout << "prosceso realizado"<<endl; //asegurarse que funciona
+    //antes esto no aparecia ni nada por lo que usar esto me aseguraba que estaba bien o mal
     if (divisores==num)
        {
         cout << "se trata de un numero perfecto";
        }
-    if (divisores!=num)
+    else
        {
         cout << "no se trata de un numero perfecto";
        }

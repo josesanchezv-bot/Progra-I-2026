@@ -4,14 +4,14 @@
 // Carrera del estudiante: Ing. Mecatrónica
 // Fecha creación: 25/02/2026
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
+#include <cstdlib> //habia q poner esto para poder usar aleatoriedad
+#include <ctime> //para poder usar tiempo
 
 using namespace std;
 
 int main() {
     int numeroSecreto, numeroUsuario, intentos = 0;
-    srand(time(0));
+    srand(time(0)); //semilla
     numeroSecreto = rand() % 100 + 1;
 
     cout << "Piensa en un numero entre 1 y 100" << endl;

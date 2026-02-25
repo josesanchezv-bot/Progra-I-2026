@@ -13,9 +13,9 @@ int main()
     int num,multi=0;
     cout <<"ingresar numero para mostrar su tabla de multiplicacion: ";
     cin >> num;
-    for (size_t i = 0; i <= 10; i++)
+    for (int i = 0; i <= 10; i++)
     {
-        multi= num*i;
+        multi= num*i; //ingreso de tabla de multiplicar
         cout << num << "x" << i << "=" << multi<<endl;
     }
     return 0;
